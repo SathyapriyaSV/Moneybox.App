@@ -1,6 +1,7 @@
 C:\Users\Sathyapriya\Downloads\dotnet-tech-task-2026\src\Moneybox.App\bin\Debug\net8.0\Moneybox.App.deps.json
 C:\Users\Sathyapriya\Downloads\dotnet-tech-task-2026\src\Moneybox.App\bin\Debug\net8.0\Moneybox.App.dll
 C:\Users\Sathyapriya\Downloads\dotnet-tech-task-2026\src\Moneybox.App\bin\Debug\net8.0\Moneybox.App.pdb
+C:\Users\Sathyapriya\Downloads\dotnet-tech-task-2026\src\Moneybox.App\obj\Debug\net8.0\Moneybox.App.csproj.AssemblyReference.cache
 C:\Users\Sathyapriya\Downloads\dotnet-tech-task-2026\src\Moneybox.App\obj\Debug\net8.0\Moneybox.App.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Sathyapriya\Downloads\dotnet-tech-task-2026\src\Moneybox.App\obj\Debug\net8.0\Moneybox.App.AssemblyInfoInputs.cache
 C:\Users\Sathyapriya\Downloads\dotnet-tech-task-2026\src\Moneybox.App\obj\Debug\net8.0\Moneybox.App.AssemblyInfo.cs

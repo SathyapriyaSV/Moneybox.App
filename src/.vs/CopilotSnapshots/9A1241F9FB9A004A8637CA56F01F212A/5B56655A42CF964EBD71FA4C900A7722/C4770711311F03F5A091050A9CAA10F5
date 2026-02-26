@@ -1,0 +1,92 @@
+﻿using System;
+using System.Threading.Tasks;
+using System.Transactions;
+using Microsoft.EntityFrameworkCore;
+using Moneybox.App.DataAccess;
+using Moneybox.App.Domain.Services;
+
+namespace Moneybox.App.Features
+{
+    public sealed class TransferMoney
+    {
+        private readonly IAccountRepository accountRepository;
+        private readonly INotificationService notificationService;
+
+        private const decimal FundsLowLimitNotification = 500m;
+        private const decimal PayInLimitNotification = 500m;
+
+        public TransferMoney(IAccountRepository accountRepository, INotificationService notificationService)
+        {
+            this.accountRepository = accountRepository ?? throw new ArgumentNullException(nameof(accountRepository));
+            this.notificationService = notificationService ?? throw new ArgumentNullException(nameof(notificationService));
+        }
+
+        /// <summary>
+        /// Executes a money transfer between two accounts. Validates inputs, updates accounts inside a transaction,
+        /// and sends notifications only after the transaction has been successfully committed.
+        /// </summary>
+        public Task Execute(Guid fromAccountId, Guid toAccountId, decimal amount)
+        {
+            if (amount <= 0)
+            {
+                throw new ArgumentException("Transfer amount must be greater than zero.", nameof(amount));
+            }
+
+            if (fromAccountId == toAccountId)
+            {
+                throw new InvalidOperationException("Cannot transfer to the same account.");
+            }
+
+            // Flags and emails captured so notifications are sent only after successful commit
+            var shouldNotifyFundsLow = false;
+            var shouldNotifyApproachingPayInLimit = false;
+            string fromEmail = null!;
+            string toEmail = null!;
+
+            using var scope = new TransactionScope(TransactionScopeAsyncFlowOption.Enabled);
+            try
+            {
+                var from = accountRepository.GetAccountById(fromAccountId)
+                           ?? throw new InvalidOperationException("Source account not found.");
+
+                var to = accountRepository.GetAccountById(toAccountId)
+                         ?? throw new InvalidOperationException("Destination account not found.");
+
+                // Perform domain operations
+                from.Withdraw(amount);
+                to.Deposit(amount);
+
+                // Capture notification decisions and emails before leaving the transaction scope
+                shouldNotifyFundsLow = from.Balance < FundsLowLimitNotification;
+                shouldNotifyApproachingPayInLimit = Account.PayInLimit - to.PaidIn < PayInLimitNotification;
+
+                fromEmail = from.User?.Email ?? string.Empty;
+                toEmail = to.User?.Email ?? string.Empty;
+
+                // Persist changes via repository
+                accountRepository.Update(from);
+                accountRepository.Update(to);
+
+                // Commit transaction
+                scope.Complete();
+            }
+            catch (DbUpdateConcurrencyException ex)
+            {
+                throw new InvalidOperationException("The account was modified by another transaction. Please try again.", ex);
+            }
+
+            // Send notifications only after successful commit
+            if (shouldNotifyFundsLow && !string.IsNullOrWhiteSpace(fromEmail))
+            {
+                notificationService.NotifyFundsLow(fromEmail);
+            }
+
+            if (shouldNotifyApproachingPayInLimit && !string.IsNullOrWhiteSpace(toEmail))
+            {
+                notificationService.NotifyApproachingPayInLimit(toEmail);
+            }
+
+            return Task.CompletedTask;
+        }
+    }
+}

@@ -1,0 +1,93 @@
+﻿using System;
+using Xunit;
+using Moneybox.App;
+using Moneybox.App.DataAccess;
+using Moneybox.App.Domain.Services;
+using Moneybox.App.Features;
+using System.Collections.Generic;
+
+namespace Moneybox.App.Tests
+{
+    public class WithdrawMoneyTests
+    {
+        class FakeAccountRepository : IAccountRepository
+        {
+            private readonly Dictionary<Guid, Account> accounts = new();
+            public List<Account> Updated = new();
+
+            public void Add(Account account) => accounts[account.Id] = account;
+
+            public Account GetAccountById(Guid accountId) => accounts[accountId];
+
+            public void Update(Account account) => Updated.Add(account);
+        }
+
+        class FakeNotificationService : INotificationService
+        {
+            public bool FundsLowNotified { get; private set; }
+            public string LastEmail { get; private set; }
+
+            public void NotifyApproachingPayInLimit(string emailAddress)
+            {
+                // not used in withdrawal tests
+            }
+
+            public void NotifyFundsLow(string emailAddress)
+            {
+                FundsLowNotified = true;
+                LastEmail = emailAddress;
+            }
+        }
+
+        [Fact]
+        public void Execute_WhenInsufficientFunds_Throws()
+        {
+            var from = new Account { Id = Guid.NewGuid(), Balance = 100m, Withdrawn = 0m, PaidIn = 0m, User = new User { Email = "from@example.com" } };
+
+            var repo = new FakeAccountRepository();
+            repo.Add(from);
+
+            var notifications = new FakeNotificationService();
+            var sut = new WithdrawMoney(repo, notifications);
+
+            Assert.Throws<InvalidOperationException>(() => sut.Execute(from.Id, 200m));
+        }
+
+        [Fact]
+        public void Execute_WhenBalanceGoesBelowThreshold_NotifiesFundsLow()
+        {
+            var from = new Account { Id = Guid.NewGuid(), Balance = 600m, Withdrawn = 0m, PaidIn = 0m, User = new User { Email = "from@example.com" } };
+
+            var repo = new FakeAccountRepository();
+            repo.Add(from);
+
+            var notifications = new FakeNotificationService();
+            var sut = new WithdrawMoney(repo, notifications);
+
+            sut.Execute(from.Id, 200m);
+
+            Assert.True(notifications.FundsLowNotified);
+            Assert.Equal(from.User.Email, notifications.LastEmail);
+        }
+
+        [Fact]
+        public void Execute_PerformsWithdrawalAndUpdatesAccount()
+        {
+            var from = new Account { Id = Guid.NewGuid(), Balance = 1000m, Withdrawn = 50m, PaidIn = 0m, User = new User { Email = "from@example.com" } };
+
+            var repo = new FakeAccountRepository();
+            repo.Add(from);
+
+            var notifications = new FakeNotificationService();
+            var sut = new WithdrawMoney(repo, notifications);
+
+            sut.Execute(from.Id, 200m);
+
+            Assert.Single(repo.Updated);
+
+            // Expected behavior: balance decreased by amount and withdrawn increased by amount
+            Assert.Equal(800m, from.Balance);
+            Assert.Equal(250m, from.Withdrawn);
+        }
+    }
+}

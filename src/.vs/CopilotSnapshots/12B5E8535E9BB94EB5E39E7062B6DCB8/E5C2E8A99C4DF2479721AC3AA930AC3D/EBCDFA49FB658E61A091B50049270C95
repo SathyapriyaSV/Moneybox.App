@@ -1,0 +1,36 @@
+﻿using System;
+using System.Collections.Concurrent;
+using System.Collections.Generic;
+using Moneybox.App.DataAccess;
+
+namespace Moneybox.App.Tests.Integration
+{
+    // A simple thread-safe in-memory account repository suitable for integration tests.
+    public class InMemoryAccountRepository : IAccountRepository
+    {
+        private readonly ConcurrentDictionary<Guid, Account> _store = new();
+        private readonly ConcurrentDictionary<Guid, object> _locks = new();
+
+        public readonly ConcurrentBag<Account> Updated = new();
+
+        public void Add(Account account) => _store[account.Id] = account;
+
+        public Account GetAccountById(Guid accountId)
+        {
+            _store.TryGetValue(accountId, out var account);
+            return account;
+        }
+
+        public void Update(Account account)
+        {
+            // Serialize updates per-account to simulate a DB row-lock / atomic update
+            var lockObj = _locks.GetOrAdd(account.Id, _ => new object());
+            lock (lockObj)
+            {
+                if (!_store.ContainsKey(account.Id)) throw new InvalidOperationException("Account not found in repository.");
+                _store[account.Id] = account;
+                Updated.Add(account);
+            }
+        }
+    }
+}
