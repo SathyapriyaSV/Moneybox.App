@@ -1,27 +1,61 @@
-# Moneybox Money Withdrawal
+# Moneybox.App
 
-The solution contains a .NET core library (Moneybox.App) which is structured into the following 3 folders:
+Moneybox.App is a .NET Core sample banking application demonstrating clean architecture, domain-driven design principles, and safe transactional money operations.
 
-* Domain - this contains the domain models for a user and an account, and a notification service.
-* Features - this contains two operations, one which is implemented (transfer money) and another which isn't (withdraw money)
-* DataAccess - this contains a repository for retrieving and saving an account (and the nested user it belongs to)
+## What It Does
 
-## The task
+The application supports:
 
-The task is to implement a money withdrawal in the WithdrawMoney.Execute(...) method in the features folder. For consistency, the logic should be the same as the TransferMoney.Execute(...) method i.e. notifications for low funds and exceptions where the operation is not possible. 
+- Transferring money between accounts
+- Withdrawing money from an account
+- Balance validation and business rule enforcement
+- Notifications when:
+  - Account balance falls below a threshold
+  - Pay-in limit is nearly reached
+- Concurrency handling with retry logic
 
-As part of this process however, you should look to refactor some of the code in the TransferMoney.Execute(...) method into the domain models, and make these models less susceptible to misuse. We're looking to make our domain models rich in behaviour and much more than just plain old objects, however we don't want any data persistance operations (i.e. data access repositories) to bleed into our domain. This should simplify the task of implementing WithdrawMoney.Execute(...).
+## Architecture
 
-## Guidelines
+The solution follows a layered design:
 
-* The test should take about an hour to complete, although there is no strict time limit
-* You should fork or copy this repository into your own public repository (Github, BitBucket etc.) before you do your work
-* Your solution must build and any tests must pass
-* You should not alter the notification service or the the account repository interfaces
-* You may add unit/integration tests using a test framework (and/or mocking framework) of your choice
-* You may edit this README.md if you want to give more details around your work (e.g. why you have done something a particular way, or anything else you would look to do but didn't have time)
-* A reasonable use of AI is permitted, but we want to see your own work and understanding reflected in the solution
+- **Domain** – Business models and rules (`Account`, `User`)
+- **DataAccess** – Repository abstraction for persistence
+- **Features** – Use cases (`TransferMoney`, `WithdrawMoney`)
+- **Infrastructure** – Logging and notifications
+- **Tests** – Unit tests validating business logic
 
-Once you have completed test, zip up your solution, excluding any build artifacts to reduce the size, and email it back to our recruitment team.
+Business logic is kept inside the domain layer, while persistence and external services are abstracted.
 
-Good luck!
+## Concurrency & Transactions
+
+- Uses `TransactionScope` to ensure atomic operations
+- Detects concurrency conflicts
+- Retries failed operations (up to 3 attempts)
+- Logs all key events using `ILogger`
+
+## Test Project
+
+The solution includes a dedicated test project that verifies:
+
+- Successful money transfers
+- Insufficient balance scenarios
+- Invalid input handling
+- Notification triggering logic
+- Concurrency behavior (where applicable)
+
+### Testing Approach
+
+- Mocking dependencies such as:
+  - `IAccountRepository`
+  - `INotificationService`
+  - `ILogger`
+- Focused tests on business rules
+
+## How to Run
+
+```bash
+git clone https://github.com/SathyapriyaSV/Moneybox.App.git
+cd Moneybox.App
+dotnet restore
+dotnet build
+dotnet test --logger "console;verbosity=detailed"
