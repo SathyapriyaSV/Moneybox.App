@@ -55,7 +55,7 @@ The solution includes a dedicated test project that verifies:
 
 ```bash
 git clone https://github.com/SathyapriyaSV/Moneybox.App.git
-cd Moneybox.App
+cd Moneybox.App/src
 dotnet restore
 dotnet build
 dotnet test --logger "console;verbosity=detailed"
