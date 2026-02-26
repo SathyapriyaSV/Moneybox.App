@@ -1,8 +1,4 @@
-using System;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using Xunit;
-using Moneybox.App;
 
 namespace Moneybox.App.Tests
 {

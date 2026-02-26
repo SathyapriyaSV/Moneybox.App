@@ -1,16 +1,7 @@
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using Moneybox.App;
-using Moneybox.App.DataAccess;
-using Moneybox.App.Domain.Services;
 using Moneybox.App.Features;
 using Moneybox.App.Tests.Shared;
 using Moq;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Xunit;
 
 namespace Moneybox.App.Tests
 {

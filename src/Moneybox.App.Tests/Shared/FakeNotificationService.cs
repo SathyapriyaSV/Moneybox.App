@@ -6,7 +6,7 @@ namespace Moneybox.App.Tests.Shared
     {
         public bool FundsLowNotified { get; private set; }
         public bool ApproachingPayInLimitNotified { get; private set; }
-        public string LastEmail { get; private set; }
+        public string? LastEmail { get; private set; }
 
         public void NotifyApproachingPayInLimit(string emailAddress)
         {
@@ -24,7 +24,7 @@ namespace Moneybox.App.Tests.Shared
         {
             FundsLowNotified = false;
             ApproachingPayInLimitNotified = false;
-            LastEmail = null;
+            LastEmail = "email@test.com";
         }
     }
 }

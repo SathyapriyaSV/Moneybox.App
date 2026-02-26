@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Sathyapriya\\Downloads\\dotnet-tech-task-2026\\src\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C1E5082E-45D6-469C-BD08-B87348851443}|Moneybox.App\\Moneybox.App.csproj|c:\\users\\sathyapriya\\downloads\\dotnet-tech-task-2026\\src\\moneybox.app\\features\\withdrawmoney.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C1E5082E-45D6-469C-BD08-B87348851443}|Moneybox.App\\Moneybox.App.csproj|solutionrelative:moneybox.app\\features\\withdrawmoney.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C1E5082E-45D6-469C-BD08-B87348851443}|Moneybox.App\\Moneybox.App.csproj|c:\\users\\sathyapriya\\downloads\\dotnet-tech-task-2026\\src\\moneybox.app\\domain\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1E5082E-45D6-469C-BD08-B87348851443}|Moneybox.App\\Moneybox.App.csproj|solutionrelative:moneybox.app\\domain\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1E5082E-45D6-469C-BD08-B87348851443}|Moneybox.App\\Moneybox.App.csproj|c:\\users\\sathyapriya\\downloads\\dotnet-tech-task-2026\\src\\moneybox.app\\domain\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1E5082E-45D6-469C-BD08-B87348851443}|Moneybox.App\\Moneybox.App.csproj|solutionrelative:moneybox.app\\domain\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7456F3B-C4F3-4D6B-9DEE-6071F5D9A022}|Moneybox.App.Tests\\Moneybox.App.Tests.csproj|c:\\users\\sathyapriya\\downloads\\dotnet-tech-task-2026\\src\\moneybox.app.tests\\shared\\fakenotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7456F3B-C4F3-4D6B-9DEE-6071F5D9A022}|Moneybox.App.Tests\\Moneybox.App.Tests.csproj|solutionrelative:moneybox.app.tests\\shared\\fakenotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C1E5082E-45D6-469C-BD08-B87348851443}|Moneybox.App\\Moneybox.App.csproj|c:\\users\\sathyapriya\\downloads\\dotnet-tech-task-2026\\src\\moneybox.app\\features\\transfermoney.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,24 +27,24 @@
       "RelativeMoniker": "D:0:0:{A7456F3B-C4F3-4D6B-9DEE-6071F5D9A022}|Moneybox.App.Tests\\Moneybox.App.Tests.csproj|solutionrelative:moneybox.app.tests\\transfermoneytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C1E5082E-45D6-469C-BD08-B87348851443}|Moneybox.App\\Moneybox.App.csproj|c:\\users\\sathyapriya\\downloads\\dotnet-tech-task-2026\\src\\moneybox.app\\domain\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C1E5082E-45D6-469C-BD08-B87348851443}|Moneybox.App\\Moneybox.App.csproj|solutionrelative:moneybox.app\\domain\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C1E5082E-45D6-469C-BD08-B87348851443}|Moneybox.App\\Moneybox.App.csproj|c:\\users\\sathyapriya\\downloads\\dotnet-tech-task-2026\\src\\moneybox.app\\dataaccess\\iaccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C1E5082E-45D6-469C-BD08-B87348851443}|Moneybox.App\\Moneybox.App.csproj|solutionrelative:moneybox.app\\dataaccess\\iaccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A7456F3B-C4F3-4D6B-9DEE-6071F5D9A022}|Moneybox.App.Tests\\Moneybox.App.Tests.csproj|c:\\users\\sathyapriya\\downloads\\dotnet-tech-task-2026\\src\\moneybox.app.tests\\accounttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7456F3B-C4F3-4D6B-9DEE-6071F5D9A022}|Moneybox.App.Tests\\Moneybox.App.Tests.csproj|solutionrelative:moneybox.app.tests\\accounttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A7456F3B-C4F3-4D6B-9DEE-6071F5D9A022}|Moneybox.App.Tests\\Moneybox.App.Tests.csproj|c:\\users\\sathyapriya\\downloads\\dotnet-tech-task-2026\\src\\moneybox.app.tests\\shared\\fakeaccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A7456F3B-C4F3-4D6B-9DEE-6071F5D9A022}|Moneybox.App.Tests\\Moneybox.App.Tests.csproj|solutionrelative:moneybox.app.tests\\shared\\fakeaccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C1E5082E-45D6-469C-BD08-B87348851443}|Moneybox.App\\Moneybox.App.csproj|c:\\users\\sathyapriya\\downloads\\dotnet-tech-task-2026\\src\\moneybox.app\\domain\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C1E5082E-45D6-469C-BD08-B87348851443}|Moneybox.App\\Moneybox.App.csproj|solutionrelative:moneybox.app\\domain\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C1E5082E-45D6-469C-BD08-B87348851443}|Moneybox.App\\Moneybox.App.csproj|c:\\users\\sathyapriya\\downloads\\dotnet-tech-task-2026\\src\\moneybox.app\\domain\\services\\inotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1E5082E-45D6-469C-BD08-B87348851443}|Moneybox.App\\Moneybox.App.csproj|solutionrelative:moneybox.app\\domain\\services\\inotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7456F3B-C4F3-4D6B-9DEE-6071F5D9A022}|Moneybox.App.Tests\\Moneybox.App.Tests.csproj|c:\\users\\sathyapriya\\downloads\\dotnet-tech-task-2026\\src\\moneybox.app.tests\\shared\\fakenotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7456F3B-C4F3-4D6B-9DEE-6071F5D9A022}|Moneybox.App.Tests\\Moneybox.App.Tests.csproj|solutionrelative:moneybox.app.tests\\shared\\fakenotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C1E5082E-45D6-469C-BD08-B87348851443}|Moneybox.App\\Moneybox.App.csproj|c:\\users\\sathyapriya\\downloads\\dotnet-tech-task-2026\\src\\moneybox.app\\dataaccess\\iaccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1E5082E-45D6-469C-BD08-B87348851443}|Moneybox.App\\Moneybox.App.csproj|solutionrelative:moneybox.app\\dataaccess\\iaccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1E5082E-45D6-469C-BD08-B87348851443}|Moneybox.App\\Moneybox.App.csproj|c:\\users\\sathyapriya\\downloads\\dotnet-tech-task-2026\\src\\moneybox.app\\features\\withdrawmoney.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1E5082E-45D6-469C-BD08-B87348851443}|Moneybox.App\\Moneybox.App.csproj|solutionrelative:moneybox.app\\features\\withdrawmoney.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,63 +54,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TransferMoney.cs",
-              "DocumentMoniker": "C:\\Users\\Sathyapriya\\Downloads\\dotnet-tech-task-2026\\src\\Moneybox.App\\Features\\TransferMoney.cs",
-              "RelativeDocumentMoniker": "Moneybox.App\\Features\\TransferMoney.cs",
-              "ToolTip": "C:\\Users\\Sathyapriya\\Downloads\\dotnet-tech-task-2026\\src\\Moneybox.App\\Features\\TransferMoney.cs",
-              "RelativeToolTip": "Moneybox.App\\Features\\TransferMoney.cs",
-              "ViewState": "AgIAAHsAAAAAAAAAAAAuwH8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-26T12:08:14.928Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "TransferMoneyTests.cs",
               "DocumentMoniker": "C:\\Users\\Sathyapriya\\Downloads\\dotnet-tech-task-2026\\src\\Moneybox.App.Tests\\TransferMoneyTests.cs",
               "RelativeDocumentMoniker": "Moneybox.App.Tests\\TransferMoneyTests.cs",
               "ToolTip": "C:\\Users\\Sathyapriya\\Downloads\\dotnet-tech-task-2026\\src\\Moneybox.App.Tests\\TransferMoneyTests.cs",
               "RelativeToolTip": "Moneybox.App.Tests\\TransferMoneyTests.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAG8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-26T13:17:51.95Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "WithdrawMoney.cs",
-              "DocumentMoniker": "C:\\Users\\Sathyapriya\\Downloads\\dotnet-tech-task-2026\\src\\Moneybox.App\\Features\\WithdrawMoney.cs",
-              "RelativeDocumentMoniker": "Moneybox.App\\Features\\WithdrawMoney.cs",
-              "ToolTip": "C:\\Users\\Sathyapriya\\Downloads\\dotnet-tech-task-2026\\src\\Moneybox.App\\Features\\WithdrawMoney.cs",
-              "RelativeToolTip": "Moneybox.App\\Features\\WithdrawMoney.cs",
-              "ViewState": "AgIAAFYAAAAAAAAAAAAqwGUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-26T14:37:08.19Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "WithdrawMoneyTests.cs",
               "DocumentMoniker": "C:\\Users\\Sathyapriya\\Downloads\\dotnet-tech-task-2026\\src\\Moneybox.App.Tests\\WithdrawMoneyTests.cs",
               "RelativeDocumentMoniker": "Moneybox.App.Tests\\WithdrawMoneyTests.cs",
               "ToolTip": "C:\\Users\\Sathyapriya\\Downloads\\dotnet-tech-task-2026\\src\\Moneybox.App.Tests\\WithdrawMoneyTests.cs",
               "RelativeToolTip": "Moneybox.App.Tests\\WithdrawMoneyTests.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAkwBsAAABKAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAowBAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-26T12:03:02.997Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
+              "Title": "TransferMoney.cs",
+              "DocumentMoniker": "C:\\Users\\Sathyapriya\\Downloads\\dotnet-tech-task-2026\\src\\Moneybox.App\\Features\\TransferMoney.cs",
+              "RelativeDocumentMoniker": "Moneybox.App\\Features\\TransferMoney.cs",
+              "ToolTip": "C:\\Users\\Sathyapriya\\Downloads\\dotnet-tech-task-2026\\src\\Moneybox.App\\Features\\TransferMoney.cs",
+              "RelativeToolTip": "Moneybox.App\\Features\\TransferMoney.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAgwEMAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-26T12:08:14.928Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FakeNotificationService.cs",
+              "DocumentMoniker": "C:\\Users\\Sathyapriya\\Downloads\\dotnet-tech-task-2026\\src\\Moneybox.App.Tests\\Shared\\FakeNotificationService.cs",
+              "RelativeDocumentMoniker": "Moneybox.App.Tests\\Shared\\FakeNotificationService.cs",
+              "ToolTip": "C:\\Users\\Sathyapriya\\Downloads\\dotnet-tech-task-2026\\src\\Moneybox.App.Tests\\Shared\\FakeNotificationService.cs",
+              "RelativeToolTip": "Moneybox.App.Tests\\Shared\\FakeNotificationService.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAzwAgAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-26T12:02:04.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Account.cs",
               "DocumentMoniker": "C:\\Users\\Sathyapriya\\Downloads\\dotnet-tech-task-2026\\src\\Moneybox.App\\Domain\\Account.cs",
               "RelativeDocumentMoniker": "Moneybox.App\\Domain\\Account.cs",
@@ -115,54 +123,79 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FakeAccountRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Sathyapriya\\Downloads\\dotnet-tech-task-2026\\src\\Moneybox.App.Tests\\Shared\\FakeAccountRepository.cs",
-              "RelativeDocumentMoniker": "Moneybox.App.Tests\\Shared\\FakeAccountRepository.cs",
-              "ToolTip": "C:\\Users\\Sathyapriya\\Downloads\\dotnet-tech-task-2026\\src\\Moneybox.App.Tests\\Shared\\FakeAccountRepository.cs",
-              "RelativeToolTip": "Moneybox.App.Tests\\Shared\\FakeAccountRepository.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAIAwwBgAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-26T12:02:45.616Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IAccountRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Sathyapriya\\Downloads\\dotnet-tech-task-2026\\src\\Moneybox.App\\DataAccess\\IAccountRepository.cs",
-              "RelativeDocumentMoniker": "Moneybox.App\\DataAccess\\IAccountRepository.cs",
-              "ToolTip": "C:\\Users\\Sathyapriya\\Downloads\\dotnet-tech-task-2026\\src\\Moneybox.App\\DataAccess\\IAccountRepository.cs",
-              "RelativeToolTip": "Moneybox.App\\DataAccess\\IAccountRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-26T14:08:43.956Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\Sathyapriya\\Downloads\\dotnet-tech-task-2026\\src\\Moneybox.App\\Domain\\User.cs",
               "RelativeDocumentMoniker": "Moneybox.App\\Domain\\User.cs",
               "ToolTip": "C:\\Users\\Sathyapriya\\Downloads\\dotnet-tech-task-2026\\src\\Moneybox.App\\Domain\\User.cs",
               "RelativeToolTip": "Moneybox.App\\Domain\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwA4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-26T12:31:00.828Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "FakeNotificationService.cs",
-              "DocumentMoniker": "C:\\Users\\Sathyapriya\\Downloads\\dotnet-tech-task-2026\\src\\Moneybox.App.Tests\\Shared\\FakeNotificationService.cs",
-              "RelativeDocumentMoniker": "Moneybox.App.Tests\\Shared\\FakeNotificationService.cs",
-              "ToolTip": "C:\\Users\\Sathyapriya\\Downloads\\dotnet-tech-task-2026\\src\\Moneybox.App.Tests\\Shared\\FakeNotificationService.cs",
-              "RelativeToolTip": "Moneybox.App.Tests\\Shared\\FakeNotificationService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAjAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "AccountTests.cs",
+              "DocumentMoniker": "C:\\Users\\Sathyapriya\\Downloads\\dotnet-tech-task-2026\\src\\Moneybox.App.Tests\\AccountTests.cs",
+              "RelativeDocumentMoniker": "Moneybox.App.Tests\\AccountTests.cs",
+              "ToolTip": "C:\\Users\\Sathyapriya\\Downloads\\dotnet-tech-task-2026\\src\\Moneybox.App.Tests\\AccountTests.cs",
+              "RelativeToolTip": "Moneybox.App.Tests\\AccountTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-26T12:02:04.261Z",
+              "WhenOpened": "2026-02-26T16:51:59.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FakeAccountRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Sathyapriya\\Downloads\\dotnet-tech-task-2026\\src\\Moneybox.App.Tests\\Shared\\FakeAccountRepository.cs",
+              "RelativeDocumentMoniker": "Moneybox.App.Tests\\Shared\\FakeAccountRepository.cs",
+              "ToolTip": "C:\\Users\\Sathyapriya\\Downloads\\dotnet-tech-task-2026\\src\\Moneybox.App.Tests\\Shared\\FakeAccountRepository.cs",
+              "RelativeToolTip": "Moneybox.App.Tests\\Shared\\FakeAccountRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-26T12:02:45.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "INotificationService.cs",
+              "DocumentMoniker": "C:\\Users\\Sathyapriya\\Downloads\\dotnet-tech-task-2026\\src\\Moneybox.App\\Domain\\Services\\INotificationService.cs",
+              "RelativeDocumentMoniker": "Moneybox.App\\Domain\\Services\\INotificationService.cs",
+              "ToolTip": "C:\\Users\\Sathyapriya\\Downloads\\dotnet-tech-task-2026\\src\\Moneybox.App\\Domain\\Services\\INotificationService.cs",
+              "RelativeToolTip": "Moneybox.App\\Domain\\Services\\INotificationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-26T16:51:41.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "WithdrawMoney.cs",
+              "DocumentMoniker": "C:\\Users\\Sathyapriya\\Downloads\\dotnet-tech-task-2026\\src\\Moneybox.App\\Features\\WithdrawMoney.cs",
+              "RelativeDocumentMoniker": "Moneybox.App\\Features\\WithdrawMoney.cs",
+              "ToolTip": "C:\\Users\\Sathyapriya\\Downloads\\dotnet-tech-task-2026\\src\\Moneybox.App\\Features\\WithdrawMoney.cs",
+              "RelativeToolTip": "Moneybox.App\\Features\\WithdrawMoney.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-26T14:37:08.19Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IAccountRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Sathyapriya\\Downloads\\dotnet-tech-task-2026\\src\\Moneybox.App\\DataAccess\\IAccountRepository.cs",
+              "RelativeDocumentMoniker": "Moneybox.App\\DataAccess\\IAccountRepository.cs",
+              "ToolTip": "C:\\Users\\Sathyapriya\\Downloads\\dotnet-tech-task-2026\\src\\Moneybox.App\\DataAccess\\IAccountRepository.cs",
+              "RelativeToolTip": "Moneybox.App\\DataAccess\\IAccountRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-26T14:08:43.956Z",
               "EditorCaption": ""
             }
           ]

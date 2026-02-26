@@ -65,8 +65,8 @@ namespace Moneybox.App.Features
             // Flags and emails captured so notifications are sent only after successful commit
             var shouldNotifyFundsLow = false;
             var shouldNotifyApproachingPayInLimit = false;
-            string? fromEmail = null;
-            string? toEmail = null;
+            string fromEmail = null;
+            string toEmail = null;
 
             var attempt = 0;
             while (true)
